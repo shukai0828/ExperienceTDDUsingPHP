@@ -19,7 +19,7 @@ class Cart
     function getTotalPrice() {
         $totalPrice = 0;
         foreach($this->productList as $product) {
-            $totalPrice += Discount::getPrice($product->getPrice());
+            $totalPrice += Discount::price($product->getPrice());
         }
 
         return $totalPrice;
