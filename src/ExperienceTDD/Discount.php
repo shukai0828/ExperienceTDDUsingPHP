@@ -9,7 +9,7 @@ namespace ExperienceTDD;
 
 class Discount
 {
-    static function getPrice($price) {
+    static function price($price) {
         if($price >= 100) {
             $price -= 50;
         }
