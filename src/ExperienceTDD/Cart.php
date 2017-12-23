@@ -16,7 +16,7 @@ class Cart
         $this->productList[] = $product;
     }
 
-    function getTotalPrice() {
+    function getPrice() {
         $totalPrice = 0;
         foreach($this->productList as $product) {
             $totalPrice += Discount::price($product->getPrice());
